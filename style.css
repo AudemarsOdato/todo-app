@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+    font-family: cursive;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+li {
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 78, 78);
+    border-radius: 4px;
+    margin: 8px 0px;
+    padding: 4px;
+}
+
+li::marker {
+    color: rgb(239, 136, 255);
+}
+
+.container {
+    max-width: 95%;
+    margin: auto;
+}
+
+#doneButtons {
+    color: rgb(239, 136, 255);
+    background-color: rgb(78, 78, 78);
+    border-width: 0px;
+    float: right;
+}
+
+input {
+    background-color: rgb(78, 78, 78);
+    color: rgb(255, 255, 255);
+    height: 30px;
+    border-radius: 8px;
+    outline: none;
+}
+
+#textBox {
+    width: 77%;
+    align-self: center;
+    float: left;
+    border: 0px;
+    padding: 0px 8px;
+}
+
+#textBox::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#addButton {
+    border-color: rgb(239, 136, 255);
+    width: 20%;
+    float: right;
+}
