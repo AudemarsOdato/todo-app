@@ -30,6 +30,7 @@ li::marker {
     background-color: rgb(78, 78, 78);
     border-width: 0px;
     float: right;
+    font-family: "Sriracha", serif;
 }
 
 input {
@@ -50,10 +51,12 @@ input {
 
 #textBox::placeholder {
     color: rgb(255, 255, 255);
+    font-family: "Sriracha", serif;
 }
 
 #addButton {
     border-color: rgb(239, 136, 255);
     width: 20%;
     float: right;
+    font-family: "Sriracha", serif;
 }
