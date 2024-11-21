@@ -3,7 +3,9 @@ const input    = document.querySelector("[name = 'todo']");
 const todoList = document.getElementById("todos");
 
 // Onload
-getExistingTodos();
+if (!(localStorage.getItem("todos") === null)) {
+        getExistingTodos();
+}
 
 function addTodo(todo) {
         createListElement(todo);
