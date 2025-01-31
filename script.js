@@ -20,18 +20,23 @@ function addToList(todo) {
 }
 
 function createListElement(todo) {
+
+        const marker = document.createElement("div");
+        todoList.appendChild(marker);
+        marker.classList.add("list");
+
         const li = document.createElement("li");
         li.textContent = todo;
-        todoList.appendChild(li);
+        marker.appendChild(li);
 
         const doneButton = document.createElement("button");
         doneButton.id = "doneButtons"
         doneButton.textContent = "Done";
         li.appendChild(doneButton);
         doneButton.addEventListener("click", function() {
-                todoList.removeChild(li);
+                todoList.removeChild(marker);
                 saveToStorage();
-        })
+        });
 }
 
 function saveToStorage() {
@@ -50,5 +55,11 @@ function getExistingTodos() {
 
 form.onsubmit = (event) => {
         event.preventDefault();
-        addTodo(input.value);
+
+        if (input.value) {
+                addTodo(input.value);
+        }
+        else {
+                alert("One must first know what one self wants.");
+        }
 }

@@ -1,5 +1,9 @@
 * {
     font-family: "Sriracha", serif;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -16,16 +20,23 @@ li {
     color: rgb(255, 255, 255);
     background-color: rgb(78, 78, 78);
     border-radius: 4px;
-    margin: 8px 0px;
-    padding: 0px 8px;
+    padding: 8px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-li::marker {
+.list {
+    display: list-item;
+    margin: 8px 0px 8px 20px;
+}
+
+.list::marker {
     color: rgb(239, 136, 255);
 }
 
 .container {
-    max-width: 95%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -33,8 +44,8 @@ li::marker {
     color: rgb(239, 136, 255);
     background-color: rgb(78, 78, 78);
     border-width: 0px;
-    float: right;
-    font-family: "Sriracha", serif;
+
+    padding: 4px 12px;
 }
 
 input {
@@ -46,32 +57,61 @@ input {
 }
 
 #textBox {
-    width: 70%;
-    align-self: center;
-    float: left;
     border: 0px;
-    padding: 0px 8px;
+    padding: 12px;
+    margin: 0px 6px 0px 6px;
+
+    width: 70vw;
 }
 
 #textBox::placeholder {
     color: rgb(255, 255, 255);
-    font-family: "Sriracha", serif;
 }
 
 #addButton {
     border-color: rgb(239, 136, 255);
-    width: 17%;
-    float: right;
-    margin-right: 10%;
-    font-family: "Sriracha", serif;
+
+    margin: 0px 6px 0px 6px;
+    width: 20vw;
 }
 
-.form-container {
+#doneButtons:active {
+    color: rgb(250, 221, 255);
+    text-decoration: line-through;
+}
+
+form {
+    background-color: rgb(46, 46, 46);
+
     position: fixed;
     bottom: 0%;
     left: 0%;
-    overflow: hidden;
+
     width: 100vw;
-    background-color: rgb(46, 46, 46);
-    padding: 20px;
+    padding: 16px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
 }
+
+@media only screen and (min-width: 590px) {
+    
+    #textBox {
+        width: 70vw;
+    }
+
+    #addButton {
+        width: 10vw;
+    }
+
+    #doneButtons:hover {
+        color: rgb(250, 221, 255);
+        text-decoration: line-through;
+    }
+
+    #doneButtons:active {
+        color: rgb(250, 221, 255);
+        text-decoration: underline;
+    }
+  }
