@@ -6,11 +6,11 @@ Link to the app: https://to-dos-audemars.netlify.app/
 
 Major lesson here is about syncing the display values like the content of a list to the local storage. This is done by adding the input to the list first and query selecting the li elements adding them to an arrayy and saving that array into the local storage.
 
-## 1.0.1
+## 1.1.1
 Improved UI for large screens
 
-## 1.1.0
-Add checkbox feature and revamp done button to remove button
+## 1.2.0
+Add checkbox feature and line through
 
 
 ## Credits

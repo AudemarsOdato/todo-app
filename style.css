@@ -26,9 +26,13 @@ li {
     justify-content: space-between;
 }
 
+.checkbox {
+    margin: 10px;
+    float: left;
+}
+
 .list {
-    display: list-item;
-    margin: 8px 0px 8px 20px;
+    margin: 8px 0px 8px 0px;
 }
 
 .list::marker {
@@ -40,7 +44,7 @@ li {
     margin: auto;
 }
 
-#doneButtons {
+#removeButton {
     color: rgb(239, 136, 255);
     background-color: rgb(78, 78, 78);
     border-width: 0px;
@@ -75,7 +79,7 @@ input {
     width: 20vw;
 }
 
-#doneButtons:active {
+#removeButton:active {
     color: rgb(250, 221, 255);
     text-decoration: line-through;
 }
@@ -109,12 +113,12 @@ form {
         width: 10vw;
     }
 
-    #doneButtons:hover {
+    #removeButton:hover {
         color: rgb(250, 221, 255);
         text-decoration: line-through;
     }
 
-    #doneButtons:active {
+    #removeButton:active {
         color: rgb(250, 221, 255);
         text-decoration: underline;
     }

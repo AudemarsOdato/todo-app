@@ -25,17 +25,34 @@ function createListElement(todo) {
         todoList.appendChild(marker);
         marker.classList.add("list");
 
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.classList.add("checkbox");
+        marker.appendChild(checkbox);
+        
         const li = document.createElement("li");
         li.textContent = todo;
         marker.appendChild(li);
 
-        const doneButton = document.createElement("button");
-        doneButton.id = "doneButtons"
-        doneButton.textContent = "Done";
-        li.appendChild(doneButton);
-        doneButton.addEventListener("click", function() {
+        const removeButton = document.createElement("button");
+        removeButton.id = "removeButton"
+        removeButton.textContent = "Remove";
+        li.appendChild(removeButton);
+        removeButton.addEventListener("click", function() {
                 todoList.removeChild(marker);
                 saveToStorage();
+        });
+
+        checkbox.addEventListener("click", () => {
+                if (checkbox.checked == true) {
+                        li.style.textDecoration = "line-through";
+                        li.style.color = "rgb(239, 136, 255)";
+                        li.style.textDecorationColor = "rgb(239, 136, 255)";
+                }
+                else if (checkbox.checked == false) {
+                        li.style.textDecoration = "none";
+                        li.style.color = "rgb(255, 255, 255)";
+                }
         });
 }
 
