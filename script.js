@@ -60,7 +60,7 @@ function saveToStorage() {
         const todoData = [];
         let list = todoList.querySelectorAll("li")
         list.forEach(todo => {
-                todoData.push(todo.textContent.replace("Done", ""));
+                todoData.push(todo.textContent.replace("Remove", ""));
         })
         localStorage.setItem("todos", JSON.stringify(todoData));
 }

@@ -27,16 +27,15 @@ li {
 }
 
 .checkbox {
-    margin: 10px;
+    margin: 10px 7px 10px 0px;
     float: left;
+
+    color: rgb(239, 136, 255);
+
 }
 
 .list {
     margin: 8px 0px 8px 0px;
-}
-
-.list::marker {
-    color: rgb(239, 136, 255);
 }
 
 .container {
