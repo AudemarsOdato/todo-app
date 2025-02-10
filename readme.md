@@ -12,6 +12,8 @@ Improved UI for large screens
 ## 1.2.0
 Add checkbox feature and line through
 
+## 1.2.1
+Add hover over todos in large screens
 
 ## Credits
 Thanks to: [Codephilip](https://www.youtube.com/@CodePhilipYT)s [video](https://youtu.be/p6F5TBxs88A?si=5DHj2vyK8-D8MqET) for the idea of the algorithm and [fireship](https://youtu.be/cuHDQhDhvPE?si=DGdWb2zubUdh-z_C) for inspiring me for the projects idea

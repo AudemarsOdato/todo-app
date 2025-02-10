@@ -47,6 +47,7 @@ li {
     color: rgb(239, 136, 255);
     background-color: rgb(78, 78, 78);
     border-width: 0px;
+    border-radius: 4px;
 
     padding: 4px 12px;
 }
@@ -112,13 +113,23 @@ form {
         width: 10vw;
     }
 
+    #addButton:active {
+        background-color: rgb(99, 99, 99);
+        color: rgb(239, 136, 255);
+    }
+
     #removeButton:hover {
         color: rgb(250, 221, 255);
+        background-color: rgb(99, 99, 99);
         text-decoration: line-through;
     }
 
     #removeButton:active {
         color: rgb(250, 221, 255);
         text-decoration: underline;
+    }
+
+    li:hover {
+        background-color: rgb(99, 99, 99);
     }
   }
